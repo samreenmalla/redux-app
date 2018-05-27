@@ -10,8 +10,9 @@ import { Provider } from 'react-redux';
 const store =  createStore(
   combineReducers({
     students: () => [
-      { id: 1, name:'Aarash' },
-      { id: 2, name:'Aditi' }
+      { id: 1, name:'Aarash', program:'CSIT' },
+      { id: 2, name:'Aditi',program:'CSIT' },
+      { id: 3, name:'Bishal', program:'Computer Science' }
     ],
     selected: (nil ,action) => {
       if(action.type === 'SELECT_STU'){
